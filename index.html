@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Закрытый клуб Надежды Антощенко</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .instagram-button {
+            background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        }
+        .instagram-border {
+            border: 4px solid transparent;
+            border-radius: 1rem;
+            background-clip: padding-box;
+            background-origin: border-box;
+            background-image: linear-gradient(to right, #ffffff, #ffffff), linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+        }
+        .instagram-avatar-container {
+            background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            border-radius: 9999px; /* Fully rounded */
+            padding: 4px; /* The offset */
+            display: inline-block;
+        }
+        .instagram-avatar-container img {
+            border-radius: 9999px; /* The image itself is also fully rounded */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">
+                Закрытый клуб
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">О клубе</a>
+                <a href="#for-whom" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Для кого</a>
+                <a href="#what-awaits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Что ждет</a>
+                <a href="#results" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Результаты</a>
+                <a href="#price" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Цена</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-4">
+            <a href="#about" class="block px-6 py-2 text-gray-600 hover:text-gray-900">О клубе</a>
+            <a href="#for-whom" class="block px-6 py-2 text-gray-600 hover:text-gray-900">Для кого</a>
+            <a href="#what-awaits" class="block px-6 py-2 text-gray-600 hover:text-gray-900">Что ждет</a>
+            <a href="#results" class="block px-6 py-2 text-gray-600 hover:text-gray-900">Результаты</a>
+            <a href="#price" class="block px-6 py-2 text-gray-600 hover:text-gray-900">Цена</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center py-12 md:py-24 space-y-8 md:space-y-0 md:space-x-12 bg-white rounded-xl shadow-lg p-8 mb-12 instagram-border">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Закрытый клуб по работе с телом Надежды Антощенко
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600">
+                    Дорогая, привет! Если ты читаешь это, то уже сделала первый шаг на пути к своему идеальному телу и здоровому организму.
+                </p>
+                <button onclick="location.href='#price'" class="mt-8 px-8 py-3 bg-indigo-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-transform transform hover:scale-105">
+                    Присоединиться к клубу
+                </button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Avatar with Instagram border -->
+                <div class="instagram-avatar-container">
+                    <img src="images/ava.jpg" alt="Надежда Антощенко" onerror="this.src='https://placehold.co/320x320/e5e7eb/6b7280?text=Надежда+Антощенко'" class="w-64 h-64 md:w-80 md:h-80 object-cover shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-8 mb-12 instagram-border">
+            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900">Обо мне</h2>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Меня зовут Надя – я нутрициолог с высшим медицинским образованием и опытом работы более 5 лет. Десятки моих клиенток построили тело мечты с помощью моей системы и комплексного подхода к здоровью.
+                    </p>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Закрытый клуб – это место, в котором ты найдешь гармонию со своим телом через тренировки, питание и работу с психологией, научишься понимать свой организм и дойдешь до уверенного результата в кругу заряженного комьюнити, без срывов, диет и ограничений.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/about.jpg" alt="Обо мне" onerror="this.src='https://placehold.co/400x300/e5e7eb/6b7280?text=Обо+мне'" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- For Whom Section -->
+        <section id="for-whom" class="bg-white rounded-xl shadow-lg p-8 mb-12 instagram-border">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Закрытый клуб для тебя, если ты:</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Много лет пытаешься избавиться от лишнего веса, но процесс стоит на месте.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Стала мамой и хочешь вернуться в форму и наладить процессы в своем организме.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Хочешь улучшить качество своего тела и построить систему на долгосрочный результат.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Для тебя важна обратная связь, поддержка на каждом этапе и комьюнити.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Хочешь наладить систему питания без срывов, жестких ограничений и перееданий.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- What Awaits Section -->
+        <section id="what-awaits" class="bg-white rounded-xl shadow-lg p-8 mb-12 instagram-border">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Что тебя ждет в октябре?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Формат закрытого клуба – ТГ канал</h3>
+                    <ul class="mt-4 space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Программа легких домашних тренировок на укрепление мышц и снижение веса.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Питание без ограничений: материалы, база из 60+ готовых авторских рецептов.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Отчеты по тренировкам и питанию с обратной связью.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Общий чат с комьюнити и поддержкой.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Мотивация и дисциплина: игровой формат, челленджи, задания, бонусы.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Программа на первый месяц</h3>
+                    <ul class="mt-4 space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Тема месяца: «Отеки и работа ЖКТ, распознаем сигналы тела».
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            План тренировок, бот с рецептами, подборка ПП сладостей.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Живые эфиры, подкасты, рубрика вопрос-ответ.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Чек-лист заботы о себе и комплекс для лица от отеков.
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Подводим итоги месяца и обсуждаем дальнейшую программу.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="bg-white rounded-xl shadow-lg p-8 mb-12 instagram-border">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">По итогам первого месяца ты:</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Наладишь работу своего ЖКТ.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Научишься распознавать сигналы организма.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Узнаешь, какие у тебя дефициты.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Избавишься от отеков.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Наладишь систему питания без срывов и переедания.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Введешь стабильный график тренировок.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Появится уверенность в себе и принятие своего тела.</p>
+                </li>
+                <li class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <p class="font-medium">Увидишь первые результаты: подтянутое тело, минус на весах, стабильную работу организма.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Price Section -->
+        <section id="price" class="bg-white rounded-xl shadow-lg p-8 mb-12 text-center instagram-border">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Цена: 3900 руб/мес</h2>
+            <p class="text-lg text-gray-700 mt-4">
+                Для связи пишите в личные cообщения
+                <a href="https://t.me/nadia_romanova_1" class="text-indigo-600 hover:underline">@nadia_romanova_1</a>
+            </p>
+            <a href="https://instagram.com" target="_blank" class="instagram-button inline-block mt-6 px-8 py-3 text-white text-lg font-semibold rounded-full shadow-lg transition-transform transform hover:scale-105">
+                INSTAGRAM
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center px-6">
+            <div class="mb-4">
+                <p>Самозанятый Антощенко Надежда Сергеевна</p>
+                <p>ИНН 290120286805</p>
+            </div>
+            <p class="text-sm text-gray-400 mb-2">
+                *Meta признана экстремистской организацией в России
+            </p>
+            <p>&copy; 2024 Закрытый клуб Надежды Антощенко. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            const navLinks = mobileMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
